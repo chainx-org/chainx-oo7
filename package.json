@@ -1,0 +1,65 @@
+{
+  "name": "oo7-substrate",
+  "version": "0.9.10",
+  "description": "Substrate Bonds library",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chainpool/chainx-oo7.git"
+  },
+  "keywords": [
+    "polkadot",
+    "substrate",
+    "bonds",
+    "oo7"
+  ],
+  "author": "Parity Technologies <admin@parity.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/chainpool/chainx-oo7.git/issues"
+  },
+  "homepage": "https://github.com/chainpool/chainx-oo7.git",
+  "dependencies": {
+    "@polkadot/util-crypto": "^0.30.7",
+    "@polkadot/util": "^0.41.1",
+    "@polkadot/wasm-crypto": "^0.5.1",
+    "base-x": "^3.0.4",
+    "bignumber.js": "^7.2.1",
+    "bip39": "^2.5.0",
+    "bitcoinjs-lib": "^3.3.2",
+    "blakejs": "^1.1.0",
+    "bs58": "^4.0.1",
+    "btc-address": "^0.4.0",
+    "change-case": "^3.0.2",
+    "core-js": "^2.5.7",
+    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-ws": "^4.0.1",
+    "jest": "^23.6.0",
+    "oo7": "^0.7.12",
+    "ss58": "^1.0.2",
+    "text-encoding": "^0.7.0",
+    "text-encoding-polyfill": "^0.6.7",
+    "tweetnacl": "^1.0.0",
+    "ws": "^6.1.2",
+    "xxhashjs": "^0.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.15.2"
+  }
+}
